@@ -1,0 +1,954 @@
+2023-04-10 04:30:30.515 INFO  (main) [   ] o.e.j.u.log Logging initialized @955ms to org.eclipse.jetty.util.log.Slf4jLog
+2023-04-10 04:30:30.665 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 18.0.1.1+2-6
+2023-04-10 04:30:30.672 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/solr%20workshop/solr-8.11.1/server/contexts/] at interval 0
+2023-04-10 04:30:30.956 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2023-04-10 04:30:30.965 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2023-04-10 04:30:30.965 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2023-04-10 04:30:30.966 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2023-04-10 04:30:31.004 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2023-04-10 04:30:31.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.11.1
+2023-04-10 04:30:31.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2023-04-10 04:30:31.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\solr workshop\solr-8.11.1
+2023-04-10 04:30:31.008 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2023-04-10T04:30:31.008560300Z
+2023-04-10 04:30:31.016 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\solr workshop\solr-8.11.1\server\solr
+2023-04-10 04:30:31.016 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\solr workshop\solr-8.11.1\server\solr\solr.xml
+2023-04-10 04:30:31.069 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd, but no JMX reporters were configured - adding default JMX reporter.
+2023-04-10 04:30:31.459 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2023-04-10 04:30:31.581 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@8f2098e[provider=null,keyStore=null,trustStore=null]
+2023-04-10 04:30:31.581 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@8f2098e[provider=null,keyStore=null,trustStore=null]
+2023-04-10 04:30:31.670 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4f0f7849[provider=null,keyStore=null,trustStore=null]
+2023-04-10 04:30:31.671 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4f0f7849[provider=null,keyStore=null,trustStore=null]
+2023-04-10 04:30:31.697 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2023-04-10 04:30:31.778 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2023-04-10 04:30:31.785 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2023-04-10 04:30:31.827 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:31.827 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:31.828 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:31.854 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 3 core definitions underneath D:\solr workshop\solr-8.11.1\server\solr
+2023-04-10 04:30:31.854 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [anime, danainanch, test]
+2023-04-10 04:30:31.884 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2023-04-10 04:30:31.884 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2023-04-10 04:30:31.884 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.11.1
+2023-04-10 04:30:31.910 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-04-10 04:30:31.910 WARN  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-04-10 04:30:31.910 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2023-04-10 04:30:31.947 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.IndexSchema Schema name=default-config
+2023-04-10 04:30:31.949 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.IndexSchema Schema name=default-config
+2023-04-10 04:30:31.949 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.s.IndexSchema Schema name=default-config
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2023-04-10 04:30:32.120 WARN  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2023-04-10 04:30:32.123 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4b6579e8{/solr,file:///D:/solr%20workshop/solr-8.11.1/server/solr-webapp/webapp/,AVAILABLE}{D:\solr workshop\solr-8.11.1\server/solr-webapp/webapp}
+2023-04-10 04:30:32.141 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@792bbc74{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2023-04-10 04:30:32.141 INFO  (main) [   ] o.e.j.s.Server Started @2583ms
+2023-04-10 04:30:32.246 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-04-10 04:30:32.246 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-04-10 04:30:32.246 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2023-04-10 04:30:32.280 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.c.CoreContainer Creating SolrCore 'anime' using configuration from instancedir D:\solr workshop\solr-8.11.1\server\solr\anime, trusted=true
+2023-04-10 04:30:32.281 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.c.CoreContainer Creating SolrCore 'danainanch' using configuration from instancedir D:\solr workshop\solr-8.11.1\server\solr\danainanch, trusted=true
+2023-04-10 04:30:32.281 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.c.CoreContainer Creating SolrCore 'test' using configuration from instancedir D:\solr workshop\solr-8.11.1\server\solr\test, trusted=true
+2023-04-10 04:30:32.301 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.anime' (registry 'solr.core.anime') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:32.301 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.danainanch' (registry 'solr.core.danainanch') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:32.301 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.test' (registry 'solr.core.test') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@29f7cefd
+2023-04-10 04:30:32.311 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.c.SolrCore [[anime] ] Opening new SolrCore at [D:\solr workshop\solr-8.11.1\server\solr\anime], dataDir=[D:\solr workshop\solr-8.11.1\server\solr\anime\data\]
+2023-04-10 04:30:32.311 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.c.SolrCore [[danainanch] ] Opening new SolrCore at [D:\solr workshop\solr-8.11.1\server\solr\danainanch], dataDir=[D:\solr workshop\solr-8.11.1\server\solr\danainanch\data\]
+2023-04-10 04:30:32.311 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.c.SolrCore [[test] ] Opening new SolrCore at [D:\solr workshop\solr-8.11.1\server\solr\test], dataDir=[D:\solr workshop\solr-8.11.1\server\solr\test\data\]
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-10 04:30:32.853 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-10 04:30:32.870 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2023-04-10 04:30:33.006 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\solr workshop\solr-8.11.1\server\solr\test\conf
+2023-04-10 04:30:33.006 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\solr workshop\solr-8.11.1\server\solr\anime\conf
+2023-04-10 04:30:33.006 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\solr workshop\solr-8.11.1\server\solr\danainanch\conf
+2023-04-10 04:30:33.015 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-10 04:30:33.015 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-10 04:30:33.015 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2023-04-10 04:30:33.020 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2023-04-10 04:30:33.020 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2023-04-10 04:30:33.020 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2023-04-10 04:30:33.029 INFO  (coreLoadExecutor-13-thread-1) [   x:anime] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-04-10 04:30:33.029 INFO  (coreLoadExecutor-13-thread-2) [   x:danainanch] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-04-10 04:30:33.029 INFO  (coreLoadExecutor-13-thread-3) [   x:test] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2023-04-10 04:30:33.042 INFO  (searcherExecutor-19-thread-1-processing-x:anime) [   x:anime] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-10 04:30:33.042 INFO  (searcherExecutor-19-thread-1-processing-x:anime) [   x:anime] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-10 04:30:33.044 INFO  (searcherExecutor-18-thread-1-processing-x:test) [   x:test] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-10 04:30:33.044 INFO  (searcherExecutor-18-thread-1-processing-x:test) [   x:test] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-10 04:30:33.045 INFO  (searcherExecutor-17-thread-1-processing-x:danainanch) [   x:danainanch] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2023-04-10 04:30:33.045 INFO  (searcherExecutor-17-thread-1-processing-x:danainanch) [   x:danainanch] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2023-04-10 04:30:33.050 INFO  (searcherExecutor-17-thread-1-processing-x:danainanch) [   x:danainanch] o.a.s.c.SolrCore [danainanch]  Registered new searcher autowarm time: 0 ms
+2023-04-10 04:30:33.050 INFO  (searcherExecutor-19-thread-1-processing-x:anime) [   x:anime] o.a.s.c.SolrCore [anime]  Registered new searcher autowarm time: 0 ms
+2023-04-10 04:30:33.050 INFO  (searcherExecutor-18-thread-1-processing-x:test) [   x:test] o.a.s.c.SolrCore [test]  Registered new searcher autowarm time: 0 ms
+2023-04-10 04:30:35.567 INFO  (qtp222427158-27) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=27
+2023-04-10 04:30:39.101 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=48
+2023-04-10 04:30:39.114 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=61
+2023-04-10 04:30:45.109 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=41
+2023-04-10 04:31:23.035 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:31:31.731 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 04:31:45.628 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 04:31:49.177 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:32:02.236 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:32:15.991 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 04:32:25.657 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:32:35.656 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:32:45.779 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 04:32:51.821 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:32:54.029 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 04:32:57.515 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:33:06.629 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:33:28.061 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=1
+2023-04-10 04:33:28.078 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=19
+2023-04-10 04:36:46.366 INFO  (qtp222427158-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681101406323} status=0 QTime=0
+2023-04-10 04:36:46.396 INFO  (qtp222427158-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681101406323} status=0 QTime=30
+2023-04-10 04:36:46.422 INFO  (qtp222427158-28) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681101406323} status=0 QTime=22
+2023-04-10 04:36:49.732 INFO  (qtp222427158-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681101406323} status=0 QTime=0
+2023-04-10 04:36:49.738 INFO  (qtp222427158-28) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1681101406323&ts=1681101406323} status=503 QTime=1
+2023-04-10 04:36:49.738 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/replication params={wt=json&command=details&_=1681101409728} status=0 QTime=3
+2023-04-10 04:36:49.740 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1681101409728} status=0 QTime=7
+2023-04-10 04:36:49.788 INFO  (qtp222427158-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681101406323} status=0 QTime=55
+2023-04-10 04:36:49.794 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/admin/system params={wt=json&_=1681101409728} status=0 QTime=59
+2023-04-10 04:36:51.645 INFO  (qtp222427158-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681101406323} status=0 QTime=0
+2023-04-10 04:36:51.669 INFO  (qtp222427158-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681101406323} status=0 QTime=24
+2023-04-10 04:36:53.589 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1681101411633} hits=300 status=0 QTime=0
+2023-04-10 04:36:53.615 INFO  (qtp222427158-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681101406323} status=0 QTime=0
+2023-04-10 04:36:53.616 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1681101411633} hits=300 status=0 QTime=0
+2023-04-10 04:36:53.642 INFO  (qtp222427158-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681101406323} status=0 QTime=26
+2023-04-10 04:45:18.464 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 04:47:05.261 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 04:47:05.270 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=9
+2023-04-10 05:05:17.817 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:7f359033-e725-47ca-8140-1c17acedd1d5&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=2
+2023-04-10 05:05:25.065 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:05:25.071 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=6
+2023-04-10 05:12:45.077 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:17:43.546 INFO  (qtp222427158-29) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681103863499} status=0 QTime=0
+2023-04-10 05:17:43.546 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1681103863532} hits=300 status=0 QTime=0
+2023-04-10 05:17:43.586 INFO  (qtp222427158-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681103863500} status=0 QTime=40
+2023-04-10 05:18:23.317 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:18:23.322 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=5
+2023-04-10 05:23:30.866 INFO  (qtp222427158-53) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=1
+2023-04-10 05:23:30.877 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=11
+2023-04-10 05:32:16.581 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=1
+2023-04-10 05:32:16.584 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=4
+2023-04-10 05:44:12.434 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:7ae6099d-0e69-4579-8de3-1949b77f2ef9&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 05:44:13.964 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:13.967 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:44:17.574 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:soccer*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:44:19.517 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:19.523 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=6
+2023-04-10 05:44:27.189 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:football*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=1 status=0 QTime=2
+2023-04-10 05:44:30.140 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:30.145 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=5
+2023-04-10 05:44:31.505 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:3a5cdcea-4855-46c1-8c05-bc78621dfa3b&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 05:44:37.609 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:37.614 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=5
+2023-04-10 05:44:39.014 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=4 status=0 QTime=0
+2023-04-10 05:44:40.728 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:017418a2-c716-42c7-bfad-333c7b09bebe&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:44:42.740 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:42.741 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:44:47.501 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=1 status=0 QTime=61
+2023-04-10 05:44:49.016 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:3a5cdcea-4855-46c1-8c05-bc78621dfa3b&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:44:50.445 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:44:50.459 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=14
+2023-04-10 05:44:54.732 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Sci-Fi*&rows=300&facet=true&wt=json} hits=3 status=0 QTime=4
+2023-04-10 05:44:55.891 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:45:05.886 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:45:05.889 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:45:13.414 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 05:45:17.448 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=3
+2023-04-10 05:45:20.670 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=3
+2023-04-10 05:45:22.551 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:45:24.353 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:45:24.356 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:45:32.355 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Mystery*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:45:35.413 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Mystery*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:45:37.658 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Mystery*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:45:39.888 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Adventure*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:45:42.101 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Drama*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=2
+2023-04-10 05:45:43.575 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:45:45.354 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:45:45.357 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:47:44.166 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Romance*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 05:47:46.831 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 05:47:49.585 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 05:47:52.687 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:017418a2-c716-42c7-bfad-333c7b09bebe&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:47:54.976 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:47:54.979 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:47:57.124 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=4 status=0 QTime=0
+2023-04-10 05:48:01.091 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 05:48:01.812 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:48:03.119 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:48:03.122 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:48:10.231 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 05:48:13.644 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:017418a2-c716-42c7-bfad-333c7b09bebe&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:48:16.386 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:48:16.389 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:48:22.608 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=4 status=0 QTime=0
+2023-04-10 05:48:24.299 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:3a5cdcea-4855-46c1-8c05-bc78621dfa3b&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:48:25.686 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:48:25.686 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 05:48:30.676 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=aired:"2009"&rows=300&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 05:48:36.026 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Drama*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 05:48:40.308 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 05:48:43.619 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 05:48:43.620 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 05:51:05.474 INFO  (qtp222427158-51) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*+AND+genre:*Action*+AND+aired:"1992"&indent=true&q.op=OR&_=1681103863532} hits=1 status=0 QTime=5
+2023-04-10 05:51:05.502 INFO  (qtp222427158-52) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681103863499} status=0 QTime=0
+2023-04-10 05:51:05.507 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*+AND+genre:*Action*+AND+aired:"1992"&indent=true&q.op=OR&_=1681103863532} hits=1 status=0 QTime=3
+2023-04-10 05:51:05.535 INFO  (qtp222427158-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681103863500} status=0 QTime=33
+2023-04-10 05:52:12.367 INFO  (qtp222427158-23) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=genre:*Action*&fq=aired:"1992"&_=1681103863532} hits=1 status=0 QTime=8
+2023-04-10 05:52:12.389 INFO  (qtp222427158-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1681103863499} status=0 QTime=0
+2023-04-10 05:52:12.393 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=genre:*Action*&fq=aired:"1992"&_=1681103863532} hits=1 status=0 QTime=4
+2023-04-10 05:52:12.420 INFO  (qtp222427158-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1681103863500} status=0 QTime=31
+2023-04-10 05:53:58.691 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy"&indent=true&start=0&q.op=OR&rows=300} hits=36 status=0 QTime=1
+2023-04-10 05:54:20.544 ERROR (qtp222427158-52) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 05:54:20.544 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:1992&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:"drawing"&fq=genre:*Action*&rows=300&facet=true&wt=json} status=400 QTime=1
+2023-04-10 05:54:43.163 ERROR (qtp222427158-26) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 05:54:43.164 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:"1992"&fq=genre:*Action*&rows=300&facet=true&wt=json} status=400 QTime=0
+2023-04-10 05:54:44.499 ERROR (qtp222427158-20) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 05:54:44.499 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:"1992"&fq=genre:*Action*&rows=300&facet=true&wt=json} status=400 QTime=0
+2023-04-10 05:54:57.582 ERROR (qtp222427158-29) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 05:54:57.582 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:"1992"&fq=genre:**Action**&rows=300&facet=true&wt=json} status=400 QTime=0
+2023-04-10 05:55:11.118 ERROR (qtp222427158-52) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 05:55:11.118 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:""1992""&fq=genre:**Action**&rows=300&facet=true&wt=json} status=400 QTime=2
+2023-04-10 05:55:41.871 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 05:57:28.677 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=3
+2023-04-10 05:58:57.208 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 06:01:51.202 ERROR (qtp222427158-52) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 06:01:51.202 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:""1992""&fq=genre:**Action**&rows=300&facet=true&wt=json} status=400 QTime=1
+2023-04-10 06:01:58.737 ERROR (qtp222427158-26) [   x:anime] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field year => org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318)
+org.apache.solr.common.SolrException: undefined field year
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1318) ~[?:?]
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:494) ~[?:?]
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86) ~[?:?]
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192) ~[?:?]
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:259) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:534) ~[?:?]
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1109) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:551) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.handleQuotedTerm(SolrQueryParserBase.java:848) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:549) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278) ~[?:?]
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162) ~[?:?]
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131) ~[?:?]
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:270) ~[?:?]
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49) ~[?:?]
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174) ~[?:?]
+	at org.apache.solr.handler.component.QueryComponent.prepare(QueryComponent.java:201) ~[?:?]
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:333) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Thread.java:833) [?:?]
+2023-04-10 06:01:58.737 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&q.op=AND&q.op=AND&facet.mincount=1&fq=year:"1992"&fq=genre:*Action*&rows=300&facet=true&wt=json} status=400 QTime=0
+2023-04-10 06:02:10.769 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 06:02:44.093 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=4 status=0 QTime=0
+2023-04-10 06:02:48.281 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:02:50.550 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:02:51.612 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:02:53.520 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:02:53.522 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:03:39.107 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&indent=true&q.op=AND&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=1
+2023-04-10 06:03:50.400 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:03:53.296 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:03:53.810 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:03:56.655 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:03:58.943 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:03:59.439 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:04:04.876 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:017418a2-c716-42c7-bfad-333c7b09bebe&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:04:07.526 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:04:07.528 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:05:11.297 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:05:14.819 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:05:15.363 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:05:18.247 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:017418a2-c716-42c7-bfad-333c7b09bebe&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:05:19.480 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:05:19.481 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:05:28.327 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:05:28.893 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f309ff47-09d2-4995-bddc-55cf870b5761&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:05:31.786 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:05:31.788 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:06:14.307 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:06:20.448 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:06:20.451 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:09:19.607 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 06:11:18.743 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:11:18.746 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:11:25.294 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:11:25.296 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:11:59.735 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:""1992""&fq=genre:*Action*} hits=0 status=0 QTime=3
+2023-04-10 06:12:09.712 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 06:12:46.001 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:12:46.003 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:13:00.391 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=4 status=0 QTime=0
+2023-04-10 06:13:04.358 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:13:06.508 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:13:06.888 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:13:08.628 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=2
+2023-04-10 06:13:11.649 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=2
+2023-04-10 06:13:14.287 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:14:59.981 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:14:59.984 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:15:51.160 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:15:51.163 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:15:59.560 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"1986"&indent=true&start=0&q.op=OR&rows=300} hits=2 status=0 QTime=0
+2023-04-10 06:16:00.714 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:9e101290-3972-4c01-bf40-6215bdf4c9e6&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:16:02.274 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:16:02.276 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:16:04.481 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"2013"&indent=true&start=0&q.op=OR&rows=300} hits=15 status=0 QTime=0
+2023-04-10 06:16:04.974 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:5fdcccc7-dbd0-4084-97d3-cd0f5c2f0cae&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:16:06.642 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:16:06.645 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:16:12.015 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"2013"&indent=true&start=0&q.op=AND&fq=genre:*Comedy*&rows=300} hits=11 status=0 QTime=2
+2023-04-10 06:16:12.819 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:60bb46d3-8958-4bdf-ae0a-acf6dd3566b1&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:16:14.882 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:16:14.884 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:16:22.662 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"2013"&indent=true&start=0&q.op=AND&fq=genre:*Fantasy*&rows=300} hits=7 status=0 QTime=2
+2023-04-10 06:16:24.406 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:0a94419e-d938-421f-8ff3-0d5b1d99bdf4&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:16:26.716 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:16:26.716 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:17:42.849 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:41db4314-af64-412e-a077-069f7a6db24d&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:17:46.111 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:17:46.112 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:17:58.136 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=6 status=0 QTime=3
+2023-04-10 06:18:01.592 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Fantasy*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=1
+2023-04-10 06:18:03.350 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 06:18:06.465 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:42caf9bd-1e9a-48df-b14f-eac6e661b872&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:18:07.979 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:18:07.981 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:18:14.722 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 06:18:16.031 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:a7063255-b8af-484b-83e5-5024f926fa77&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:18:18.654 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:18:18.656 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:18:27.273 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 06:18:27.796 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:8db2c27e-3216-4da0-9ff1-2112580399b6&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:18:32.709 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:18:32.709 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:19:09.551 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=1
+2023-04-10 06:19:09.554 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:19:16.636 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:drawing&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Action*&rows=300&facet=true&wt=json} hits=2 status=0 QTime=1
+2023-04-10 06:19:19.440 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"2009"&fq=genre:*Action*} hits=0 status=0 QTime=3
+2023-04-10 06:19:22.511 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*drawing*&indent=true&q.op=AND&fq=aired:"1992"&fq=genre:*Action*} hits=1 status=0 QTime=2
+2023-04-10 06:19:27.211 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:19:27.952 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:19:27.955 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:20:13.874 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:7f359033-e725-47ca-8140-1c17acedd1d5&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:16.872 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:16.875 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:20:17.267 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:eb66b39b-e3f9-4dbd-b6b9-82b3698e19df&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:18.278 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:18.281 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:18.814 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:7b17885e-f3b4-4888-92c3-6a8611d88af6&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:19.692 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:19.695 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:20.206 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:c490be0b-bf79-4795-aad7-6444045a40fa&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:21.113 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:21.115 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:21.566 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:df0bc779-f6b8-4176-bcf6-2e3b9afe4f2a&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:22.863 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:22.866 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:20:23.387 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d6a42815-6816-46bd-ae99-a885cf31b4e6&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:24.609 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:24.612 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:20:25.397 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:7f359033-e725-47ca-8140-1c17acedd1d5&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:26.305 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:26.308 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:27.559 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:2e1772c6-b3ee-4bf8-b3c3-2bd829feac52&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:30.227 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:30.230 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:20:31.696 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:f6abec85-92af-4888-a80c-28fabe347774&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:32.628 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:32.630 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:33.526 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:eb66b39b-e3f9-4dbd-b6b9-82b3698e19df&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 06:20:41.813 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:41.815 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:20:43.197 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:86b83e31-b52d-4637-b2e1-173621fc53bb&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=1
+2023-04-10 06:20:45.278 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:20:45.281 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:21:23.158 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy"&indent=true&start=0&q.op=OR&rows=300} hits=36 status=0 QTime=0
+2023-04-10 06:21:23.681 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy,++Romance+"&indent=true&start=0&q.op=OR&rows=300} hits=11 status=0 QTime=0
+2023-04-10 06:21:24.912 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Other"&indent=true&start=0&q.op=OR&rows=300} hits=9 status=0 QTime=0
+2023-04-10 06:21:26.007 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Action,++Drama+,++Sci-Fi+"&indent=true&start=0&q.op=OR&rows=300} hits=7 status=0 QTime=0
+2023-04-10 06:21:26.900 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Action,++Comedy+"&indent=true&start=0&q.op=OR&rows=300} hits=6 status=0 QTime=0
+2023-04-10 06:21:28.019 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Action,++Adventure+,++Comedy+"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:21:28.653 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Adventure,++Comedy+,++Fantasy+"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:21:30.001 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Adventure,++Comedy+,++Fantasy+"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:21:32.574 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:21:34.104 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy,++Romance+"&indent=true&start=0&q.op=OR&rows=300} hits=11 status=0 QTime=0
+2023-04-10 06:21:35.263 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Drama"&indent=true&start=0&q.op=OR&rows=300} hits=11 status=0 QTime=0
+2023-04-10 06:21:37.176 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:22:02.280 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:02.285 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=6
+2023-04-10 06:22:04.671 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:22:07.036 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:07.038 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:22:19.626 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:19.630 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:22:21.062 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Other"&indent=true&start=0&q.op=OR&rows=300} hits=9 status=0 QTime=0
+2023-04-10 06:22:22.983 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:22:36.572 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:36.575 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:22:38.178 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Other"&indent=true&start=0&q.op=OR&rows=300} hits=9 status=0 QTime=0
+2023-04-10 06:22:40.073 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:22:44.768 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:44.771 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:22:47.116 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:22:47.119 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:23:27.469 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:24:12.850 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:24:12.854 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:24:18.150 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=1
+2023-04-10 06:24:18.152 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:24:20.720 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:24:20.723 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:24:38.889 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:24:38.891 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:24:40.786 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:24:56.215 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:24:56.218 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:25:01.302 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:26:41.472 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:26:41.475 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:26:47.166 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:26:54.069 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:26:54.071 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:26:56.156 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:27:03.695 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:27:03.697 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:27:05.561 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:27:12.617 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:27:12.620 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:27:18.567 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:27:18.569 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:27:20.022 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:27:24.808 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:27:24.811 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:27:43.727 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Romance"&indent=true&start=0&q.op=OR&rows=300} hits=5 status=0 QTime=0
+2023-04-10 06:27:46.504 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy,++Romance+"&indent=true&start=0&q.op=OR&rows=300} hits=11 status=0 QTime=0
+2023-04-10 06:27:48.307 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:27:48.309 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:44:56.083 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:*Action*&indent=true&start=0&q.op=OR&rows=300} hits=116 status=0 QTime=3
+2023-04-10 06:45:06.983 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:*Sports*&indent=true&start=0&q.op=OR&rows=300} hits=20 status=0 QTime=2
+2023-04-10 06:45:09.624 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"1985"&indent=true&start=0&q.op=AND&fq=genre:*Sports*&rows=300} hits=0 status=0 QTime=1
+2023-04-10 06:45:12.007 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"2015"&indent=true&start=0&q.op=AND&fq=genre:*Sports*&rows=300} hits=4 status=0 QTime=1
+2023-04-10 06:45:13.843 INFO  (qtp222427158-22) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:45:13.845 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:47:30.547 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:47:30.549 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:47:35.217 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:47:35.219 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:48:10.086 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:48:10.089 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:49:37.691 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:49:37.693 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 06:49:57.176 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:49:57.179 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:50:53.491 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:50:53.493 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 06:50:56.897 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 06:50:56.899 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 07:07:06.094 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=6 status=0 QTime=0
+2023-04-10 07:07:09.114 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Drama*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 07:07:10.144 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:01c6ab4c-c733-4290-88a8-947cc6b3f5f0&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:07:11.936 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:07:11.939 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 07:07:22.511 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 07:07:24.677 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"1985"&fq=genre:*Comedy*} hits=0 status=0 QTime=15
+2023-04-10 07:07:26.401 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"1995"&fq=genre:*Comedy*} hits=0 status=0 QTime=3
+2023-04-10 07:07:28.382 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2016"&fq=genre:*Comedy*} hits=1 status=0 QTime=2
+2023-04-10 07:07:52.643 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2017"&fq=genre:*Comedy*} hits=2 status=0 QTime=7
+2023-04-10 07:07:57.602 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2016"&fq=genre:*Comedy*} hits=1 status=0 QTime=1
+2023-04-10 07:08:00.309 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2017"&fq=genre:*Comedy*} hits=2 status=0 QTime=1
+2023-04-10 07:08:00.931 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:42caf9bd-1e9a-48df-b14f-eac6e661b872&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:08:02.983 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:08:02.985 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 07:09:16.071 INFO  (qtp222427158-20) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:_Animation__Chikyuu_ga_Seishi_Suru_Hi*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=0 status=0 QTime=0
+2023-04-10 07:09:30.596 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=6 status=0 QTime=0
+2023-04-10 07:09:31.815 INFO  (qtp222427158-56) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:09:31.817 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 07:10:58.003 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:11:13.577 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:11:13.580 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 07:22:11.549 INFO  (qtp222427158-21) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Comedy"&indent=true&start=0&q.op=OR&rows=300} hits=36 status=0 QTime=0
+2023-04-10 07:22:13.010 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Drama"&indent=true&start=0&q.op=OR&rows=300} hits=11 status=0 QTime=0
+2023-04-10 07:22:13.946 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Other"&indent=true&start=0&q.op=OR&rows=300} hits=9 status=0 QTime=0
+2023-04-10 07:22:14.835 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Action,++Drama+,++Sci-Fi+"&indent=true&start=0&q.op=OR&rows=300} hits=7 status=0 QTime=0
+2023-04-10 07:22:20.738 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:b4c8a0ac-1050-4f2f-86f7-12cc9c65f340&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:23:05.982 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=genre:"Action"&indent=true&start=0&q.op=OR&rows=300} hits=4 status=0 QTime=0
+2023-04-10 07:23:35.449 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:23:35.451 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=2
+2023-04-10 07:24:02.040 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=6 status=0 QTime=0
+2023-04-10 07:24:20.482 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Mystery*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 07:24:24.246 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 07:24:27.337 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Fantasy*&rows=300&facet=true&wt=json} hits=0 status=0 QTime=2
+2023-04-10 07:24:29.952 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu&facet.field=title&facet.field=genre&indent=true&start=0&q.op=AND&facet.mincount=1&fq=genre:*Comedy*&rows=300&facet=true&wt=json} hits=6 status=0 QTime=1
+2023-04-10 07:24:42.838 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:01c6ab4c-c733-4290-88a8-947cc6b3f5f0&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:24:46.781 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:24:46.785 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 07:24:49.577 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:haikyuu*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=6 status=0 QTime=0
+2023-04-10 07:25:02.917 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2014"&fq=genre:*Comedy*} hits=0 status=0 QTime=3
+2023-04-10 07:25:05.245 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:*haikyuu*&indent=true&q.op=AND&fq=aired:"2016"&fq=genre:*Comedy*} hits=1 status=0 QTime=2
+2023-04-10 07:25:16.313 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:25:16.315 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 07:25:33.145 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=aired:"2014"&indent=true&start=0&q.op=AND&fq=genre:*Fantasy*&rows=300} hits=3 status=0 QTime=1
+2023-04-10 07:25:52.247 INFO  (qtp222427158-29) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:90b5d44d-b4e9-42b2-8d4d-71bcd511af05&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:25:55.553 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:25:55.555 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 07:25:59.103 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=id:d451ebe6-aeca-482a-b074-8f972f0959d8&facet.field=title&facet.field=genre&indent=true&q.op=OR&facet.mincount=1&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:26:07.631 INFO  (qtp222427158-55) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:26:07.634 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
+2023-04-10 07:26:09.159 INFO  (qtp222427158-52) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:+Annihilator*&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=1 status=0 QTime=0
+2023-04-10 07:26:25.378 INFO  (qtp222427158-25) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=*:*&facet.field=aired&indent=true&start=0&q.op=OR&facet.mincount=1&rows=0&facet=true&wt=json} hits=300 status=0 QTime=0
+2023-04-10 07:26:25.381 INFO  (qtp222427158-26) [   x:anime] o.a.s.c.S.Request [anime]  webapp=/solr path=/select params={q=_text_:**&facet.field=title&facet.field=genre&indent=true&start=0&q.op=OR&facet.mincount=1&rows=300&facet=true&wt=json} hits=300 status=0 QTime=3
